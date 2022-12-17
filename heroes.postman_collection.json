@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "7bf5fb1a-2167-44ca-8b23-be60b327af6e",
+		"name": "heroes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4502228"
+	},
+	"item": [
+		{
+			"name": "CreateRequest (POST)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseId\": 4,\r\n\t\"objective\": \"help with rocks\",\r\n\t\"description\": \"help\",\r\n\t\"method\": \"idk\",\r\n\t\"meetingDayOfWeek\": 2,\r\n\t\"meetingTime\": 2,\r\n\t\"contactMethod\": 2,\r\n\t\"createdBy\": \"george@tamu.edu\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/request",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRequestsByEmail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/request/kramer%40tamu.edu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"request",
+						"kramer%40tamu.edu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users?preferredTime=2&courseId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "preferredTime",
+							"value": "2"
+						},
+						{
+							"key": "courseId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
