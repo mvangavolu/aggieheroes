@@ -7,7 +7,7 @@
 
 ## Other Notes
 
-- Run Vanilla Go executable: go run main.go
+- Run Go executable: go run main.go
 - change postgres config in app.go Initialize function
 - by default, this will run the api on localhost:8080
 - import heroes.postman_collection.json as a collection into postman to test the api
