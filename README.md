@@ -1,4 +1,3 @@
-Aggie Heroes backend
 
 ## Build Steps
 
